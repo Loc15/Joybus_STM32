@@ -11,6 +11,10 @@
 
 #include "XInputDescriptors.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define XINPUT_OUT_SIZE 32
 #define GAMEPAD_JOYSTICK_MID 0
 
@@ -23,5 +27,9 @@ extern const usbd_class_driver_t xinput_driver;
 void receive_xinput_report(void);
 bool send_xinput_report(void *report, uint8_t report_size);
 void send_report(void *report, uint16_t report_size);
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif
 
 #pragma once

@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-    void setup(UART_HandleTypeDef *uart_p, UART_HandleTypeDef *joybus_uart);
+    void setup(UART_HandleTypeDef *joybus_uart);
 
     void loop(void);
 

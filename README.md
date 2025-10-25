@@ -1,4 +1,4 @@
-# STM32 JOYSBUS
+# STM32 JOYBUS
 
 A N64 input to Xinput converter.
 
